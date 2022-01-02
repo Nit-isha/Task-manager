@@ -3,6 +3,7 @@ const app = express();
 const tasks = require("./routes/tasks");
 
 //middleware
+
 app.use(express.json()); //if we don't use then we will not have any data in req.body
 
 //routes
