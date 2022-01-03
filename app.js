@@ -1,9 +1,10 @@
 const express = require("express");
 const app = express();
 const tasks = require("./routes/tasks");
+const connectDB = require("./db/connect");
+require("dotenv").config();
 
-//middleware
-
+//middleware: pre-built
 app.use(express.json()); //if we don't use then we will not have any data in req.body
 
 //routes
@@ -15,4 +16,13 @@ app.use("/api/v1/tasks", tasks);
 
 const port = 3000;
 
-app.listen(port, console.log(`Server is listening on ${port}..`));
+const start = async () => {
+  try {
+    await connectDB(process.env.mongo_url);
+    app.listen(port, console.log(`Server is listening on port ${port}..`));
+  } catch (error) {
+    console.log(error);
+  }
+};
+
+start();

@@ -2,6 +2,14 @@
 Using Node, Express, CRUD operations, MongoDB Atlas, Mongoose
 
 ---
+
+### Dependencies
+- dotenv
+- express
+- mongoose
+
+---
+
 ### Conventions [REST API]
 
 - `GET` : app.get('/api/v1/tasks') ---> `get all tasks`
@@ -13,7 +21,7 @@ Using Node, Express, CRUD operations, MongoDB Atlas, Mongoose
 ---
 
 ### MongoDB
-- NoSQL, Nono-relational DB
+- NoSQL, Non-relational DB
 - Store JSON
 - Easy to get started
 - Free cloud hosting - ATLAS (Mongo Db Atlas)
@@ -21,4 +29,7 @@ Using Node, Express, CRUD operations, MongoDB Atlas, Mongoose
   
 ---
 
+### Mongoose
 
+- Only the properties you set on schema will be passed onto the database.
+- Any extra information will be neglected.
