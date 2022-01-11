@@ -3,6 +3,7 @@ const app = express();
 const tasks = require("./routes/tasks");
 const connectDB = require("./db/connect");
 const notFound = require("./middleware/not-found");
+const errorHandlerMiddleware = require("./middleware/error-handler");
 require("dotenv").config();
 
 //middleware: pre-built
@@ -13,6 +14,7 @@ app.use(express.json()); //if we don't use then we will not have any data in req
 
 app.use("/api/v1/tasks", tasks);
 app.use(notFound); //for any route other than /api/v1/tasks
+app.use(errorHandlerMiddleware);
 
 const port = 3000;
 

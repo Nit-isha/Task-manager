@@ -42,3 +42,7 @@ Using Node, Express, CRUD operations, MongoDB Atlas, Mongoose
 - [https://mongoosejs.com/docs/queries.html](https://mongoosejs.com/docs/queries.html).
 
 ---
+
+### Express error handlers
+- Default error handlers [http://expressjs.com/en/guide/error-handling.html#the-default-error-handler](http://expressjs.com/en/guide/error-handling.html#the-default-error-handler).
+- Writing error handlers [http://expressjs.com/en/guide/error-handling.html#writing-error-handlers](http://expressjs.com/en/guide/error-handling.html#writing-error-handlers).
