@@ -33,3 +33,12 @@ Using Node, Express, CRUD operations, MongoDB Atlas, Mongoose
 
 - Only the properties you set on schema will be passed onto the database.
 - Any extra information will be neglected.
+- [https://mongoosejs.com/docs/guide.html](https://mongoosejs.com/docs/guide.html).
+
+---
+
+### Mongoose queries
+- Mongoose models provide several static helper functions for CRUD operations.
+- [https://mongoosejs.com/docs/queries.html](https://mongoosejs.com/docs/queries.html).
+
+---
