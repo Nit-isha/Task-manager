@@ -1,7 +1,7 @@
 {
   "name": "task-manager",
   "version": "1.0.0",
-  "description": "",
+  "description": "Using Node, Express, CRUD operations, MongoDB Atlas, Mongoose",
   "main": "app.js",
   "scripts": {
     "start": "nodemon app.js"
@@ -12,5 +12,14 @@
     "dotenv": "^8.6.0",
     "express": "^4.17.2",
     "mongoose": "^5.13.14"
-  }
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Nit-isha/https---github.com-Nit-isha-Task-manager.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Nit-isha/https---github.com-Nit-isha-Task-manager/issues"
+  },
+  "homepage": "https://github.com/Nit-isha/https---github.com-Nit-isha-Task-manager#readme"
 }
